@@ -26,17 +26,19 @@ Each startup is given a Startup Score (0–100) based on the weighted contributi
 
 Feature	Weight
 
-Team Experience	15%
+Reasoning Behind Each Weight:
 
-Market Size	20%
+team_experience	(0.15(weight))- A strong founding team with domain experience is crucial for execution and resilience. However, execution must be balanced with other growth signals, hence a moderate weight.
 
-Monthly Active Users	20%
+market_size_million_usd	(0.20)-Startups targeting a larger market have higher upside potential. Investors value Total Addressable Market (TAM), so this gets a high weight.
 
-Monthly Burn Rate (lower is better)	10%
+monthly_active_users	(0.20)-	Active user base reflects traction and engagement, which directly signals product-market fit. Startups with growing users are often seen as valuable.
 
-Funds Raised	15%
+monthly_burn_rate_inr(0.10)-	While burn rate is important for sustainability, a high burn is not always bad if matched with growth. So, it's included but given a lower weight.
 
-Valuation	20%
+funds_raised_inr(0.15)-Fundraising reflects investor confidence, but over-reliance can lead to poor capital efficiency. Hence, a balanced mid-level weight.
+
+valuation_inr(0.20)-Valuation reflects market perception and future potential. It's weighted high, but care should be taken as inflated valuations may not always reflect fundamentals.
 
 Note: The monthly_burn_rate_inr was negated to reward startups with lower burn.
 
