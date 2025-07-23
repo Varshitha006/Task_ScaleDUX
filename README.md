@@ -63,3 +63,37 @@ Based on the cluster centroids, we manually assigned meaningful labels to the cl
 
 3	-Low funding, low valuation niche startups
 
+📊 Visual Insights from the Dataset
+1. Score Distribution (Third  Plot)
+
+Description: This histogram shows the distribution of startup scores computed from weighted features such as market size, burn rate, valuation, etc.
+
+Observation:
+
+The distribution is approximately normal (bell-shaped).
+
+Most startups score between 40 to 60, with very few startups on the extreme lower or higher ends.
+
+This indicates that the scoring model is well balanced, not overly skewed toward outliers.
+
+Implication: Your scoring system is fairly discriminative and representative of a wide range of startup performance levels.
+
+
+2. Feature Correlation Heatmap (Second Plot)
+
+Description: This heatmap visualizes the pairwise correlation between all features used in the scoring.
+
+Key Observations:
+
+Most features have weak correlations (values close to 0), meaning they provide independent signals about a startup’s quality.
+
+A few mild positive correlations are visible, e.g.:
+
+market_size_million_usd has a positive correlation (~0.15) with funds_raised_inr, suggesting larger markets tend to attract more funding.
+
+valuation_inr correlates positively with team_experience and monthly_active_users, indicating these are often tied to perceived value.
+
+Low Multicollinearity: The weak overall correlations validate the design decision to include all six features in the score without redundancy.
+
+Implication: The chosen features offer diverse, complementary signals about a startup, which strengthens the scoring and clustering model.
+
